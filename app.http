@@ -1,0 +1,28 @@
+POST http://localhost:3000/register
+Content-Type:application/json 
+
+{
+  "username": "nagesh",
+  "name":"nagesh chintada",
+  "password": "nagesh_123",
+  "gender": "male",
+  "location": "Srikakulam"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type:application/json 
+
+{
+  "username": "nagesh",
+  "password": "nagesh_123"
+}
+###
+PUT http://localhost:3000/change-password
+Content-Type:application/json
+
+{
+  "username": "nagesh",
+  "oldPassword": "nagesh#123",
+  "newPassword": "nagesh6123"
+}
